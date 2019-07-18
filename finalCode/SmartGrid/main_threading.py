@@ -121,7 +121,7 @@ class blackoutObject(QtCore.QThread):
       state = 0
       print("RUNNING")
       while True:
-          if((triggered == 0) and (GPIO.input(26) == False)):     # TRIGGER BLACKOUTTTT
+          if((triggered == 0) and (GPIO.input(26) == False)):     # Trigger blackout activity
               falSteady = 0
               dbnCounter = 0
               while dbnCounter < 1000:
@@ -295,7 +295,7 @@ def main():
   #width, height = screen_resolution.width(), screen_resolution.height()
   form = MainWindow()
   form.showFullScreen()
-   # without this, the script exits immediately.
+  # without this, the script exits immediately.
   sys.exit(app.exec_())
  
 # python bit to figure how who started This
